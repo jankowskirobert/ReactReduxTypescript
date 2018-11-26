@@ -44,7 +44,7 @@ export function reducer(state: IState = initialState, action: Action) {
     case "X": {
       return {
         ...state,
-        duppa: ""
+        duppa: state.duppa+"_"
       }
     }
     default:
